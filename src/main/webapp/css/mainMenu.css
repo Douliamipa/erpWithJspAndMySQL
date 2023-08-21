@@ -1,0 +1,47 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Style the container holding the forms */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Style the form elements */
+form {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Style the buttons */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add spacing between the buttons */
+form:not(:last-child) {
+    margin-bottom: 20px;
+}
