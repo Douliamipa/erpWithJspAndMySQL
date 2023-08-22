@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("erpProjectWithSQLAndJsp/updateClient")
+@WebServlet("/erpProjectWithSQLAndJsp/updateClient")
 public class ClientUpdateController extends HttpServlet {
     private static final  long serialVersionUID = 1L ;
     private final IClientDao clientDao = new ClientDAOImpl();

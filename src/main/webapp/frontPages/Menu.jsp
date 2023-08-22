@@ -20,7 +20,7 @@
     </div>
     <div class="bot-gap">
       <form method="POST" action="${pageContext.request.contextPath}/erpProjectWithSQLAndJsp/search">
-        <input name="Vat number" type="text" class="search rounded" placeholder="Insert Customers Vat No"
+        <input name="CompanyName" type="text" class="search rounded" placeholder="Insert Customers Company Name"
                autofocus/>
         <br><br>
         <button class="search-btn rounded color-btn" type="submit">Search</button>
