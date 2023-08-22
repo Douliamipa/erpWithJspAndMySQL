@@ -45,7 +45,7 @@
                        onclick="return confirm('Are you sure you want to delete this teacher?')">Delete</a></td>
 
                 <td><a href="${pageContext.request.contextPath}/frontPages/clientUpdate.jsp?
-                      companysName=${clients.companysName}&VatNo=${clients.vatNo}&City=${clients.city}&street=${clients.street}&streetNo=${clients.streetNo}&zipCode=${clients.zipCode}&country=${clients.country}&paymentMethod=${clients.paymentMethod}
+                       companysName=${clients.companysName}&VatNo=${clients.vatNo}&City=${clients.city}&street=${clients.street}&streetNo=${clients.streetNo}&zipCode=${clients.zipCode}&country=${clients.country}&paymentMethod=${clients.paymentMethod}
                         &accountingCategory=${clients.accountingCategory}">Update</a></td>
             </tr>
         </c:forEach>
