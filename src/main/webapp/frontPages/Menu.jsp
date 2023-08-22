@@ -19,7 +19,7 @@
       <span class="title">Clients Search</span>
     </div>
     <div class="bot-gap">
-      <form method="POST" action="${pageContext.request.contextPath}/erpProjectWithSQLAndJsp/search">
+      <form method="POST" action="${pageContext.request.contextPath}/erpProjectWithSQLAndJsp/searchClient">
         <input name="CompanyName" type="text" class="search rounded" placeholder="Insert Customers Company Name"
                autofocus/>
         <br><br>

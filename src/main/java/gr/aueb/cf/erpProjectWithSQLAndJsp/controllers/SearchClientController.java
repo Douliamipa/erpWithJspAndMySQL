@@ -46,7 +46,7 @@ public class SearchClientController extends HttpServlet {
                 request.getRequestDispatcher("/frontPages/Menu.jsp").forward(request,response);
             }
             request.setAttribute("clients",clients);
-            request.getRequestDispatcher("frontPages/clients.jsp").forward(request,response);
+            request.getRequestDispatcher("/frontPages/clients.jsp").forward(request,response);
 
         } catch ( ClientNotFoundException e) {
             message = e.getMessage();

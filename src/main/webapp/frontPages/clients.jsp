@@ -1,8 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8"  %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Customers Found</title>
 </head>
 <body>
@@ -24,27 +26,27 @@
             <th>Delete</th>
             <th>Update</th>
         </tr>
-        <c:forEach var = "client" items = "${requestScope.teachers}">
+        <c:forEach var = "clients" items = "${requestScope.clients}">
             <tr>
-                <td>${client.id}</td>
-                <td>${client.CompanysName}</td>
-                <td>${client.vatNo}</td>
-                <td>${client.street}</td>
-                <td>${client.streetNo}</td>
-                <td>${client.city}</td>
-                <td>${client.zipCode}</td>
-                <td>${client.country}</td>
-                <td>${client.paymentMethod}</td>
-                <td>${client.accountingCategory}</td>
+                <td>${clients.id}</td>
+                <td>${clients.companysName}</td>
+                <td>${clients.vatNo}</td>
+                <td>${clients.street}</td>
+                <td>${clients.streetNo}</td>
+                <td>${clients.city}</td>
+                <td>${clients.zipCode}</td>
+                <td>${clients.country}</td>
+                <td>${clients.paymentMethod}</td>
+                <td>${clients.accountingCategory}</td>
 
-                <td><a href="${pageContext.request.contextPath}/erpProjectWithSQLAndJsp/ClientDeleteController?id=${client.id}
-                      &CompanysName=${client.CompanysName}&VatNo=${client.vatNo}&City=${client.city}&street=${client.street}&streetNo=${client.streetNo}&zipCode=${client.zipCode}&country=${client.country}&paymentMethod=${client.paymentMethod}
-                        &accountingCategory=${client.accountingCategory}"
+                <td><a href="${pageContext.request.contextPath}/erpProjectWithSQLAndJsp/ClientDeleteController?
+                      companysName=${clients.companysName}&VatNo=${clients.vatNo}&City=${clientst.city}&street=${clients.street}&streetNo=${clientst.streetNo}&zipCode=${clients.zipCode}&country=${clients.country}&paymentMethod=${clients.paymentMethod}
+                        &accountingCategory=${clients.accountingCategory}"
                        onclick="return confirm('Are you sure you want to delete this teacher?')">Delete</a></td>
 
-                <td><a href="${pageContext.request.contextPath}/frontPages/clientUpdate.jsp?id=${client.id}
-                      &CompanysName=${client.CompanysName}&VatNo=${client.vatNo}&City=${client.city}&street=${client.street}&streetNo=${client.streetNo}&zipCode=${client.zipCode}&country=${client.country}&paymentMethod=${client.paymentMethod}
-                        &accountingCategory=${client.accountingCategory}">Update</a></td>
+                <td><a href="${pageContext.request.contextPath}/frontPages/clientUpdate.jsp?
+                      companysName=${clients.companysName}&VatNo=${clients.vatNo}&City=${clients.city}&street=${clients.street}&streetNo=${clients.streetNo}&zipCode=${clients.zipCode}&country=${clients.country}&paymentMethod=${clients.paymentMethod}
+                        &accountingCategory=${clients.accountingCategory}">Update</a></td>
             </tr>
         </c:forEach>
     </table>
