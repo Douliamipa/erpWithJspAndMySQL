@@ -68,18 +68,20 @@
 
         <input name="PaymentMethod" type="text" value="${requestScope.insertedClient.PaymentMethod}"  autofocus /><br>
         <label for="dropdownInput">Select Payment Method:</label>
-        <select id="dropdownInput" name="dropdownPaymentMethodInput">
+        <select id="dropdownInput" name="dropdownPaymentMethodPaymentMethod">
           <option value="option1">Cash</option>
           <option value="option2" >Credit</option>
           <option value="option3">Bank Transfer</option>
+        </select>
         </select>
 
 
 
 
-          <input name="AccountingCategory" type="text" value="${requestScope.insertedClient.AccountingCategory}"  autofocus /><br>
-        <label for="dropdownInput2">Select Accounting Category:</label>
-        <select id="dropdownInput2" name="dropdownAccountingCategoryInput">
+
+        <input name="AccountingCategory" type="text" value="${requestScope.insertedClient.AccountingCategory}"  autofocus /><br>
+        <label for="AccountingCategory">Select Accounting Category:</label>
+        <select id="AccountingCategory" name="AccountingCategory">
           <option value="option1">Domestic</option>
           <option value="option2" >EU client</option>
           <option value="option3">Outside Eu Client</option>
