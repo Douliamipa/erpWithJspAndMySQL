@@ -11,7 +11,7 @@
     <table>
         <tr>
             <th>ID</th>
-            <th>Companys Name</th>
+            <th>CompanysName</th>
             <th>Vat No</th>
             <th>city</th>
             <th>street</th>
@@ -37,11 +37,14 @@
                 <td>${client.paymentMethod}</td>
                 <td>${client.accountingCategory}</td>
 
-                <td><a href="${pageContext.request.contextPath}/schoolapp/delete?id=${teacher.id}
-                      &firstname=${teacher.firstname}&lastname=${teacher.lastname}"
+                <td><a href="${pageContext.request.contextPath}/erpProjectWithSQLAndJsp/ClientDeleteController?id=${client.id}
+                      &CompanysName=${client.CompanysName}&VatNo=${client.vatNo}&City=${client.city}&street=${client.street}&streetNo=${client.streetNo}&zipCode=${client.zipCode}&country=${client.country}&paymentMethod=${client.paymentMethod}
+                        &accountingCategory=${client.accountingCategory}"
                        onclick="return confirm('Are you sure you want to delete this teacher?')">Delete</a></td>
 
-                <td><a href="${pageContext.request.contextPath}/school/static/templates/teacherupdate.jsp?id=${teacher.id}&firstname=${teacher.firstname}&lastname=${teacher.lastname}">Update</a></td>
+                <td><a href="${pageContext.request.contextPath}/frontPages/clientUpdate.jsp?id=${client.id}
+                      &CompanysName=${client.CompanysName}&VatNo=${client.vatNo}&City=${client.city}&street=${client.street}&streetNo=${client.streetNo}&zipCode=${client.zipCode}&country=${client.country}&paymentMethod=${client.paymentMethod}
+                        &accountingCategory=${client.accountingCategory}">Update</a></td>
             </tr>
         </c:forEach>
     </table>
